@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Cart from './Components/Cart.jsx'
 import Home from './Components/Home.jsx'
 import Product from './Components/Product.jsx'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter(
   [
@@ -38,7 +40,6 @@ const router = createBrowserRouter(
     },
   ]
 )
-
 //create context for cart to provide global access to every page
 const CartContext = createContext();
 
@@ -49,6 +50,7 @@ function App() {
       <CartContext.Provider value={{open , setOpen}} >
          <RouterProvider router={router} />
           <Cart />
+       
       </CartContext.Provider>
       
      

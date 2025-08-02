@@ -1,30 +1,32 @@
 import { createSlice } from '@reduxjs/toolkit'
-
+// import { ToastContainer, toast } from "react-toastify";
+import {toast} from 'react-hot-toast'
 const initialState = {
-  value: 0,
+  products : [],
 }
 
 export const shoppingSlice = createSlice({
   name: 'shoppingCart',
   initialState,
   reducers: {
-    increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
-      state.value += 1
+    addToCart: (state, action) => {
+      state.products.push(action.payload)
+      console.log("i am here")
+      toast.success("Product added to Cart")
     },
-    decrement: (state) => {
-      state.value -= 1
+    removeFromCart: (state , action) => {
+      let ind = state.products.findIndex( p => p.id === action.payload)
+      if(ind != -1)
+          state.products.splice(ind,1);
     },
-    incrementByAmount: (state, action) => {
+    //update when item is checkedout
+    updateCart: (state, action) => {
       state.value += action.payload
     },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = shoppingSlice.actions
+export const { addToCart, removeFromCart, incrementByAmount } = shoppingSlice.actions
 
 export default shoppingSlice.reducer

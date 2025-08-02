@@ -179,12 +179,12 @@ const cardVariants = {
 export default function Example() {
   return (
     <div  className="bg-gradient-to-br from-[#4A5A6A] via-[#5C6D7F] to-[#7A8899] relative flex flex-col justify-center px-8 py-2 w-full backdrop-blur-sm text-white overflow-hidden">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-2 py-16 sm:px-4 sm:py-24 lg:max-w-7xl lg:px-6">
         <h2 className="text-2xl font-bold tracking-tight text-white text-center mt-0">Our Products</h2>
         <div className="mt-6 grid grid-cols-1 rounded-10xl gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {products.map((product ,index) => (
             
-            <motion.div key={product.id}
+            <motion.div key={product.id} 
               variants={cardVariants}
               initial="initial"
               animate="animate"

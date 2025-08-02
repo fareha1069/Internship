@@ -36,7 +36,9 @@ const Home = () => {
 
           {/* Shop Now button */}
           <Link to='/products'>
-          <button className="mt-6 px-6 py-3 bg-white text-[#2E3A48] font-semibold rounded-lg hover:bg-gray-200 transition duration-300 shadow-md">
+          <button 
+          style={{ cursor: "pointer" }}          
+          className="mt-6 px-6 py-3 bg-white text-[#2E3A48] font-semibold rounded-lg hover:bg-gray-200 transition duration-300 shadow-md">
             Shop Now
           </button>
           </Link>

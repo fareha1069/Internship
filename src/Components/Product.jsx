@@ -1,12 +1,22 @@
+import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { addToCart } from '../slices/shoppingSlice';
+import { useState } from 'react';
 
 export default function ProductDetail() {
   const location = useLocation();
   const product = location.state || {};
+  const dispatch = useDispatch();
+  const [qty , setQty] = useState(0);
 
-  
   if (!product) {
     return <div className="text-center text-gray-500 mt-10">No product data available.</div>;
+  }
+
+  function handleAddToCart()
+  {
+    console.log("hello")
+    dispatch(addToCart(product))
   }
 
   return (
@@ -27,7 +37,10 @@ export default function ProductDetail() {
           <p className="text-xl text-gray-700 mb-6">{product.price}</p>
           <p className="text-gray-600 mb-6">{product.description}</p>
             {/* <p className="text-gray-600 mb-6">{product.color}</p> */}
-          <button className="w-fit bg-[#2E3A48] text-white px-6 py-3 rounded-md hover:bg-[#1e2a35] transition duration-300">
+          <button
+          onClick={handleAddToCart}
+          style={{cursor:'pointer'}}
+          className="w-fit bg-[#2E3A48] text-white px-6 py-3 rounded-md hover:bg-[#1e2a35] transition duration-300">
             Add to Cart
           </button>
         </div>
