@@ -2,7 +2,8 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/newLogo.png'
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
-
+import {useContext} from 'react'
+import {CartContext} from '../App.jsx'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -17,6 +18,8 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  
+    const {open , setOpen}  = useContext(CartContext);
     return (
     <Disclosure as="nav" className="bg-gradient-to-br from-[#2E3A48] via-[#3b4a5a] to-[#5a6675]">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -54,13 +57,16 @@ export default function Example() {
                   </a>
                 ))}
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-6">
-                <a href="/cart" className="relative">
+                <button
+                  onClick={() => {
+                    console.log( "Cart opened")   
+                    setOpen(!open)} }
+                  className="relative rounded-md px-2.5 py-1.5 text-sm font-semibold text-gray-900 hover:bg-gray-950/10">
                   <ShoppingCartIcon className="h-8 w-6 text-white hover:text-gray-300" />
-                  {/* Optional: Add badge for item count */}
                   <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center">
                     3
                   </span>
-                </a>
+              </button>
               </div>
               </div>
             </div>

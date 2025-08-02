@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { createContext, useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar.jsx'
 import Products from './Components/Products.jsx'
@@ -28,15 +28,6 @@ const router = createBrowserRouter(
       </div>
     },
 
-    {
-      path:"/cart",
-      element :
-      <div>
-        <Navbar/>
-        <Cart />
-      </div>
-    },
-
      {
       path:"/product",
       element :
@@ -47,13 +38,23 @@ const router = createBrowserRouter(
     },
   ]
 )
-function App() {
 
+//create context for cart to provide global access to every page
+const CartContext = createContext();
+
+function App() {
+  const [open, setOpen] = useState(false)
   return (
     <div>
-      <RouterProvider router={router} />
+      <CartContext.Provider value={{open , setOpen}} >
+         <RouterProvider router={router} />
+          <Cart />
+      </CartContext.Provider>
+      
+     
     </div>
   )
 }
 
 export default App
+export {CartContext};
