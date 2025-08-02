@@ -5,6 +5,7 @@ import Products from './Components/Products.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Cart from './Components/Cart.jsx'
 import Home from './Components/Home.jsx'
+import Product from './Components/Product.jsx'
 
 const router = createBrowserRouter(
   [
@@ -33,6 +34,15 @@ const router = createBrowserRouter(
       <div>
         <Navbar/>
         <Cart />
+      </div>
+    },
+
+     {
+      path:"/product",
+      element :
+      <div>
+        <Navbar/>
+        <Product />
       </div>
     },
   ]

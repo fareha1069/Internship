@@ -1,10 +1,14 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from '../assets/logo.png'
+import logo from '../assets/newLogo.png'
+import { ShoppingCartIcon } from '@heroicons/react/24/outline';
+
+
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Products', href: '/products', current: false },
-  { name: 'Cart', href: '/cart', current: false },
+  // { name: 'Cart', href: '/', current: false },
+  
 //   { name: 'Calendar', href: '#', current: false },
 ]
 
@@ -14,9 +18,9 @@ function classNames(...classes) {
 
 export default function Example() {
     return (
-    <Disclosure as="nav" className="bg-[#FFE5B4]">
+    <Disclosure as="nav" className="bg-gradient-to-br from-[#2E3A48] via-[#3b4a5a] to-[#5a6675]">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-23 items-center justify-between">
+        <div className="relative flex h-23 items-center justify-between ">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
@@ -31,7 +35,7 @@ export default function Example() {
               <img
                 alt="Your Company"
                 src={logo}
-                className="h-23 w-23 lg:mr-100"
+                className="h-23 w-35 lg:mr-100"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
@@ -41,21 +45,29 @@ export default function Example() {
                     key={item.name}
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
-                     className={classNames(
-                      item.current ? 'text-[#2E8B57] ' : ' hover:bg-white hover:black text-[#2E8B57]',
-                      ' mt-7 rounded-md px-3 py-2 text-md font-medium',
+                    className={classNames(
+                      item.current ? 'text-white ' : '  hover:black text-white',
+                      ' mt-7 rounded-md px-3 py-2 text-md lg:text-lg font-medium',
                     )}
                   >
                     {item.name}
                   </a>
                 ))}
+                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 mt-6">
+                <a href="/cart" className="relative">
+                  <ShoppingCartIcon className="h-8 w-6 text-white hover:text-gray-300" />
+                  {/* Optional: Add badge for item count */}
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center">
+                    3
+                  </span>
+                </a>
+              </div>
               </div>
             </div>
           </div>
         
         </div>
       </div>
-
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
@@ -65,8 +77,8 @@ export default function Example() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? ' text-black' : 'hover:bg-white hover:text-black',
-                'block rounded-md px-3 py-2 text-base font-medium ',
+                item.current ? ' text-white' : ' ',
+                'block rounded-md px-3 py-2 text-base text-white font-medium ',
               )}
             >
               {item.name}
