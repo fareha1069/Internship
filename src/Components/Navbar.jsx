@@ -91,6 +91,17 @@ export default function Example() {
             </DisclosureButton>
           ))}
         </div>
+          <div className="px-4 py-2 flex justify-end flex-row-reverse">
+          <button
+            onClick={() => setOpen(!open)}
+            className="relative inline-flex items-center p-2 rounded-md text-white hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white"
+          >
+            <ShoppingCartIcon className="h-6 w-6" />
+            <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+              3
+            </span>
+          </button>
+        </div>
       </DisclosurePanel>
     </Disclosure>
   )
