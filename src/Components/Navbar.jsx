@@ -14,9 +14,9 @@ function classNames(...classes) {
 
 export default function Example() {
     return (
-    <Disclosure as="nav" className="bg-[#86efab]">
+    <Disclosure as="nav" className="bg-[#FFE5B4]">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+        <div className="relative flex h-23 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
@@ -31,7 +31,7 @@ export default function Example() {
               <img
                 alt="Your Company"
                 src={logo}
-                className="h-20 w-auto lg:mr-100"
+                className="h-23 w-23 lg:mr-100"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
@@ -42,7 +42,7 @@ export default function Example() {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                      className={classNames(
-                      item.current ? 'text-black ' : ' hover:bg-white hover:black',
+                      item.current ? 'text-[#2E8B57] ' : ' hover:bg-white hover:black text-[#2E8B57]',
                       ' mt-7 rounded-md px-3 py-2 text-md font-medium',
                     )}
                   >
