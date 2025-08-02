@@ -100,9 +100,11 @@ export default function Example() {
             className="relative inline-flex items-center p-2 rounded-md text-white hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white"
           >
             <ShoppingCartIcon className="h-6 w-6" />
-            <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-              3
-            </span>
+            { products.length>0 &&(
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center">
+                    {products.length}
+                  </span>
+            )}
           </button>
         </div>
       </DisclosurePanel>
