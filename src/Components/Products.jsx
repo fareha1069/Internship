@@ -26,141 +26,155 @@ const products = [
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
   },
   {
-    id: 1,
+    id: 2,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic2,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+     qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },{
-    id: 1,
+    id: 3,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic3,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },{
-    id: 1,
+    id: 4,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic4,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
 
   },{
-    id: 1,
+    id: 5,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic5,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },{
-    id: 1,
+    id: 6,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic6,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },{
-    id: 1,
+    id: 7,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic7,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },{
-    id: 1,
+    id: 8,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic8,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0, 
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },{
-    id: 1,
+    id: 9,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic9,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },{
-    id: 1,
+    id: 10,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic10,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty:0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },
   {
-    id: 1,
+    id: 11,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic11,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },
   {
-    id: 1,
+    id: 12,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic12,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0, 
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },
   {
-    id: 1,
+    id: 13,
     name: 'Basic Tee',
     href: '#',
     imageSrc: Pic13,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0,
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },
   {
-    id: 1,
+    id: 14,
     name: 'Bli Tee',
     href: '#',
     imageSrc: Pic14,
     imageAlt: "Front of men's Basic Tee in black.",
     price: '$35',
     color: 'Black',
+    qty: 0, 
     description : 'Illuminate your space with our elegantly designed Aurora Glow Table Lamp, the perfect blend of contemporary style and soft ambient lighting. Crafted with a sleek matte metal base and a frosted glass dome, this lamp adds a touch of minimal sophistication to any room—be it your bedroom, living room, or office. The warm, dimmable LED light creates a cozy atmosphere ideal for relaxing or reading. With its compact design and wireless capability, it fits seamlessly on nightstands or desks without clutter. The lamp also features touch-sensitive controls and a long-lasting rechargeable battery, making it both functional and stylish. Whether you are redecorating or just need the right lighting accent, the Aurora Glow promises to be your go-to modern essential. Add this timeless piece to your home and experience lighting like never before'
 
   },

@@ -10,9 +10,25 @@ export const shoppingSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      state.products.push(action.payload)
-      console.log("i am here")
-      toast.success("Product added to Cart")
+      
+      if(action.payload.qty < 1)
+      {
+        toast("Please Select a quantity to continue.")
+      }
+      else{
+          let ind = state.products.findIndex( p => p.id === action.payload.id)
+          //if product already exit
+          if(ind != -1)
+          {
+            state.products[ind].qty += action.payload.qty
+          }
+          else{
+            state.products.push(action.payload)
+            // console.log("i am here")
+          }
+          toast.success("Product added to Cart")
+      }
+      
     },
     removeFromCart: (state , action) => {
       let ind = state.products.findIndex( p => p.id === action.payload)
