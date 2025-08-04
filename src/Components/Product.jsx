@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { addToCart } from '../slices/shoppingSlice';
 import { useState } from 'react';
-import Checkout from './Checkout';
+// import Checkout from './Checkout';
 
 export default function ProductDetail() {
   const location = useLocation();
