@@ -133,6 +133,7 @@ export default function Cart() {
                     <div className="mt-8">
                       <div className="flow-root">
                         <ul role="list" className="-my-6 divide-y divide-gray-200">
+                        {products.length === 0 ? <p>Your cart is empty</p> : null}
                           {products.map((product , index) => (
                             <li key={product.id} className="flex py-6 items-start">
                               {/* Checkbox */}
