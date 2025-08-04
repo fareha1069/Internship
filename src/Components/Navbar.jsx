@@ -38,7 +38,7 @@ export default function Example() {
               <img
                 alt="Your Company"
                 src={logo}
-                className="h-23 w-35 lg:mr-100"
+                className="h-20 w-23 lg:mr-100"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
