@@ -17,7 +17,7 @@ export default function ProductDetail() {
   function handleAddToCart()
   {
       const updatedProduct = {
-        ...product, //shallow copy
+        ...product,
         qty: (product.qty || 0) + qty  //
       }
       dispatch(addToCart(updatedProduct));

@@ -86,7 +86,6 @@ export default function Cart() {
 
   let selectedItems =[]
   selectedItems = products.filter((p) => selectedProducts.includes(p.id))
-  const subtotal = selectedItems.reduce((sum, item) => sum + item.price * item.qty, 0)
   useEffect(() => {
     calculateTotal()
   
