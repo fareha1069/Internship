@@ -111,7 +111,7 @@ export default function Cart() {
             <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10 sm:pl-16">
               <DialogPanel
                 transition
-                className="pointer-events-auto w-screen max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full sm:duration-700"
+                className="pointer-events-auto w-screen max-w-[10%] max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full "
               >
                 <div className="flex h-full flex-col overflow-y-auto bg-white shadow-xl">
                   <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
@@ -155,7 +155,7 @@ export default function Cart() {
                                 <div>
                                   <div className="flex justify-between text-base font-medium text-gray-900">
                                     <h3>{product.name}</h3>
-                                    <p className="ml-4">{product.price}</p>
+                                    <p className="ml-1">{product.price}</p>
                                   </div>
                                   <p className="mt-1 text-sm text-gray-500">{product.color}</p>
                                 </div>
@@ -206,7 +206,7 @@ export default function Cart() {
                     <div className="mt-6">
                       <button
                         disabled={selectedProducts.length === 0}
-                        className={`flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium text-white shadow-xs
+                        className={`flex w-full items-center justify-center rounded-md border border-transparent py-3 text-base font-medium text-white shadow-xs
                           ${
                             selectedProducts.length === 0
                               ? 'bg-gray-400 cursor-not-allowed'
