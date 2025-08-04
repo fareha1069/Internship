@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { addToCart } from '../slices/shoppingSlice';
 import { useState } from 'react';
+import Checkout from './Checkout';
 
 export default function ProductDetail() {
   const location = useLocation();
@@ -45,18 +46,19 @@ export default function ProductDetail() {
             <div className='flex flex-row gap-5 mb-5'>
               <label htmlFor="text" className='font-semibold mt-2'>Quantity</label>
                 <button
+                style={{cursor : 'pointer'}}
                 className='bg-gray-100 w-[5%] rounded m-1 text-xl'
                 onClick={ () => setQty(qty-1)}>
                   -
                 </button>
                 <p className='text-md mt-1'>{qty}</p>
-                <button 
+                <button
+                style={{cursor : 'pointer'}}
                 className='bg-gray-100 w-[5%] rounded m-1 text-xl'
                 onClick={ () => setQty(qty+1)}>
                   +
                 </button>
             </div>
-        
           <button
           onClick={handleAddToCart}
           style={{cursor:'pointer'}}
@@ -65,6 +67,7 @@ export default function ProductDetail() {
           </button>
         </div>
       </div>
+      {/* <Checkout/> */}
     </div>
   );
 }

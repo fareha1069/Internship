@@ -48,12 +48,10 @@ function App() {
   return (
     <div>
       <CartContext.Provider value={{open , setOpen}} >
-         <RouterProvider router={router} />
+        <RouterProvider router={router} />
           <Cart />
-       
-      </CartContext.Provider>
       
-     
+      </CartContext.Provider>
     </div>
   )
 }

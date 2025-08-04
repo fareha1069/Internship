@@ -37,12 +37,15 @@ export const shoppingSlice = createSlice({
     },
     //update when item is checkedout
     updateCart: (state, action) => {
-      state.value += action.payload
+      const {id , newQty } = action.payload
+      let ind = state.products.findIndex( p => p.id === id)
+      if(ind != -1)
+        state.products[ind].qty = newQty
     },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { addToCart, removeFromCart, incrementByAmount } = shoppingSlice.actions
+export const { addToCart, removeFromCart, updateCart } = shoppingSlice.actions
 
 export default shoppingSlice.reducer

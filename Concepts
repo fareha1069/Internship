@@ -1,0 +1,5 @@
+useContext : for gloabal access
+useLocation : passing data from prev location
+useState : maintain current value
+useEffect : perform task based on some event
+redux : manage data gloabally
