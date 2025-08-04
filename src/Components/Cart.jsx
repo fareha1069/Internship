@@ -140,7 +140,7 @@ export default function Cart() {
                                 type="checkbox"
                                 checked={selectedProducts.includes(product.id)}
                                 onChange={() => toggleSelection(product.id)}
-                                className="mt-2 mr-4 h-5 w-5 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                                className="mt-2 mr-1 h-3 w-3 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
                               />
 
                               <div className="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
